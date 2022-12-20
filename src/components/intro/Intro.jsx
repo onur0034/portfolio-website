@@ -22,7 +22,7 @@ export default function Intro() {
           <h3>
             Frontend
             <span>{text}</span>
-            <Cursor cursorColor="black" />
+            <Cursor cursorColor="red" />
           </h3>
         </div>
         <a href="#portfolio">
