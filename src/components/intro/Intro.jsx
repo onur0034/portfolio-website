@@ -1,17 +1,13 @@
 import "./intro.scss";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import { init } from "ityped";
-import { useEffect, useRef } from "react";
+import { useTypewriter } from "react-simple-typewriter";
+import "react-simple-typewriter/dist/index";
 
 export default function Intro() {
-  const textRef = useRef();
-  useEffect(() => {
-          init(textRef.current, {
-            showCursor: false,
-            strings: ["Developer!", "Engineer!", "Love!"],
-          });
-
-  }, [])
+  const [text] = useTypewriter({
+    words: [" Developer!", " Designer!", " Freelancer!", " Warrior"],
+    loop: 0,
+  });
   return (
     <div className="intro" id="intro">
       <div className="left">
@@ -24,7 +20,8 @@ export default function Intro() {
           <h2>Hi Guys!</h2>
           <h1>I am Onur Un</h1>
           <h3>
-            Frontend <span ref={textRef}></span>
+            Frontend
+            <span>{text}</span>
           </h3>
         </div>
         <a href="#portfolio">
