@@ -1,11 +1,11 @@
 import "./intro.scss";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import { useTypewriter } from "react-simple-typewriter";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import "react-simple-typewriter/dist/index";
 
 export default function Intro() {
   const [text] = useTypewriter({
-    words: [" Developer!", " Designer!", " Freelancer!", " Warrior"],
+    words: [" Developer!", " Designer!", " Freelancer!"],
     loop: 0,
   });
   return (
@@ -22,6 +22,7 @@ export default function Intro() {
           <h3>
             Frontend
             <span>{text}</span>
+            <Cursor cursorColor="black" />
           </h3>
         </div>
         <a href="#portfolio">
