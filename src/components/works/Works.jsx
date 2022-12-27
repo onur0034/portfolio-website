@@ -10,21 +10,21 @@ export default function Works() {
       icon: "https://w7.pngwing.com/pngs/588/140/png-transparent-mobile-app-euclidean-icon-click-the-ppt-phone-material-blue-gadget-hand.png",
       title: "Mobile Application",
       desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      img: "assets/imagination.jpeg",
+      img: "assets/cross.jpg",
     },
     {
       id: 2,
       icon: "https://flyclipart.com/thumb2/github-png-icon-free-download-813498.png",
       title: "Github Profile",
       desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      img: "assets/imagination.jpeg",
+      img: "assets/obey.jpg",
     },
     {
       id: 3,
       icon: "https://img1.pngindir.com/20180406/hpw/kisspng-linkedin-logo-computer-icons-comcast-business-get-started-now-button-5ac6f543cb6bf0.2094725315229883558332.jpg",
       title: "LinkedIn Profile",
       desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-      img: "assets/imagination.jpeg",
+      img: "assets/donotfear.jpg",
     },
   ];
 
