@@ -1,8 +1,14 @@
+@import "../../global.scss";
 
 
 .intro {
   background-color: white;
   display: flex;
+
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
 
     .left{
         flex: 0.5;
@@ -21,8 +27,15 @@
             align-items: flex-end;
             justify-content: center;
             float: right;
+
+            @include mobile{
+                  align-items: start;
+                }
             img{
                 width: 100%;
+                @include mobile{
+                  height: 50%;
+                }
               }
                         }
               }
